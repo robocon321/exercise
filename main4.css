@@ -1,0 +1,67 @@
+#main4-left
+{
+	float:left;
+	width: 600px;
+	position:relative;
+	left: 100px;
+}
+#main4-right
+{
+	float:right;
+	position:absolute;
+	right: 100px;
+	padding:10px;
+}
+#main4-SQLExample
+{
+	font-size: 35px;
+	text-align: center;
+	opacity: 0.7;
+}
+#main4-content
+{
+	background-color: white;
+	margin:20px;
+	border-left: 3px solid rgb(1, 210, 8);
+	padding:20px;
+	box-shadow: 2px 2px 4px black;
+}
+#main4-left button
+{
+	font-size: 25px;
+	background-color: rgb(1, 210, 8);
+	margin:10px;
+	color:white;
+	height:50px;
+	border: none;
+}
+#main4-SQL
+{
+	font-size: 50px;
+	opacity: 0.7;
+	text-align:center;
+}
+#main4-right p
+{
+	font-size: 22px;
+}
+#main4-btn button 
+{
+	background-color: rgb(90, 85, 85);
+	width: auto;
+	height:auto;
+	padding:10px;
+	border: none;
+}
+#main4 a
+{
+	font-size: 25px;
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#main4
+{
+	background-color: rgb(230, 230, 230);
+	height: 400px;
+}
