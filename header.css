@@ -1,0 +1,14 @@
+img{
+	height: 50px;
+	width:200px;
+	float: left;
+}
+#slogan{
+	float:right;
+	font-size: 22px;
+}
+#header{
+	margin-top:40px; 
+	width: 100%;
+	height: 70px;
+}
