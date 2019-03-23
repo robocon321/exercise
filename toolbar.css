@@ -1,0 +1,19 @@
+#select ul li{
+	font-size: 35px;
+	list-style-type: none;
+	color:white;
+	float: left;
+	margin-right: 40px;
+}
+i
+{
+	padding: 10px;
+	color:white;
+}
+#toolbar {
+	background-color: rgb(102, 255, 102)
+}
+#option a
+{
+	float:right;
+}
