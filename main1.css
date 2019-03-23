@@ -1,0 +1,65 @@
+#main1-button{
+	text-transform: uppercase;
+}
+#main1-left
+{
+	float:left;
+	width:800px;
+	text-align: center;
+	font-size: 30px;
+}
+#main1-right
+{
+	float:right;
+	width: 500px;
+	padding:30px;
+	background-color: rgb(230, 230, 230);
+}
+#main1-left button{
+	background-color: rgb(90, 85, 85);
+	width:200px;
+	height:40px;
+	border:none;
+}
+#main1-left button a{
+	text-decoration: none;
+	color:white;
+	font-size: 18px;
+}
+#main1-btn 
+{
+	background-color:rgb(1, 210, 8);
+	margin-top: 20px;
+	width: 250px;
+	height: 40px;
+	border:none;
+}
+#main1-btn a
+{
+	text-decoration: none;
+	font-size: 22px;
+	color:white;
+}
+#main1-HTML
+{
+	font-size: 60px;
+	opacity: 0.6;
+}
+
+#main1-content{
+	background-color: white;
+	border-left: 4px solid rgb(1, 210, 8);
+	font-size: 18px;
+	padding: 10px;
+	box-shadow: 2px 2px 4px black;
+}
+#main1-HTMLExample{
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+#main1
+{
+	margin-top: 20px;
+	width: 100%;
+	height:500px;
+}
