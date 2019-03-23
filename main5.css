@@ -1,0 +1,47 @@
+#main5
+{
+	display:grid;
+	background-color: rgb(104, 104, 104);
+	height:600px;
+	width: 100%;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	align-items: center;
+}
+#main5-item1,#main5-item2,#main5-item3,#main5-item4
+{
+	width: 500px;
+	height: 250px;
+	background-color: white;
+	margin:20px;
+	text-align: center;
+}
+.main5-title
+{
+	font-size: 45px;
+	opacity: 0.7;
+}
+.main5-content
+{
+	font-size: 25px;
+	margin-top: 20px;
+	opacity: 0.8;
+}
+.main5-button
+{
+	width: auto;
+	height: 40px;
+	font-size: 25px;
+	background-color: rgb(104, 104, 104);
+	border: none;
+	align-items: center;
+	position:relative;
+	margin-top:50px;
+	padding:10px;
+}
+.main5-button a
+{
+	text-decoration: none;
+	color:white;
+	text-transform: uppercase;
+}
