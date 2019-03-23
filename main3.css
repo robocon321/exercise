@@ -1,0 +1,73 @@
+#main3-left
+{
+	float:left;
+	width: auto;
+	position:relative;
+	left: 100px;
+	background-color: rgb(230, 230, 230);
+	padding:20px;
+}
+#main3-right
+{
+	float:right;
+	position:absolute;
+	right: 100px;
+	padding:10px;
+}
+#main3-Javascript
+{
+	font-size: 50px;
+	text-align: center;
+	opacity: 0.7;
+}
+#main3-content
+{
+	background-color: white;
+	margin:20px;
+	border-left: 3px solid rgb(1, 210, 8);
+	padding:20px;
+	box-shadow: 2px 2px 4px black;
+}
+#main3-right button
+{
+	font-size: 25px;
+	background-color: rgb(1, 210, 8);
+	margin:10px;
+	color:white;
+	height:50px;
+	border:none;
+}
+#main3-left p
+{
+	font-size: 35px;
+	opacity: 0.7;
+	text-align:center;
+}
+#main3 a
+{
+	font-size: 25px;
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	height:500px;
+}
+#main3-left button
+{
+	background-color: rgb(90, 85, 85);
+	width: auto;
+	height:auto;
+	padding:10px;
+	border: none;
+}
+#main3-JavascriptExample
+{
+	font-size: 40px;
+	opacity: 0.7;
+}
+#main3
+{
+	width: 100%;
+	height: 400px;
+	margin-top: 10px;
+}
