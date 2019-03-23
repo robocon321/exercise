@@ -1,0 +1,31 @@
+#main9-frame1-sidebar
+{
+	background-color: black;
+	z-index: 0;
+	height: 100%;
+	width: 160px;
+	position:fixed;
+}
+#main9-frame1-sidebar a
+{
+	margin: 30px;
+	text-decoration: none;
+	font-size: 30px;
+	color:white;
+	opacity: 0.5;
+	overflow: scroll;
+}
+#main9-frame1-content
+{
+	position:absolute;
+	left: 200px;
+	font-size: 22px;
+}
+#main9-frame1
+{
+	overflow-y: scroll;
+}
+#main9-frame1-sidebar a:hover
+{
+	opacity: 0.9;
+}

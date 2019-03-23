@@ -1,0 +1,29 @@
+#main9-frame2-sidebar
+{
+  width: 130px;
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+}
+#main9-frame2-sidebar a
+{
+	display:block;
+	position: relative;
+	padding:10px;
+	text-decoration: none;
+	color:#2196F3;
+	font-size: 26px;
+}
+#main9-frame2-content
+{
+	position: absolute;
+	left: 150px;
+	font-size: 22px;
+	overflow-y:scroll;
+}
+#main9-frame2-sidebar a:hover
+{
+	opacity: 0.5;
+}
