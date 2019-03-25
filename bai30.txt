@@ -1,0 +1,43 @@
+
+public class bai30 {
+	public static void main(String []args)
+	{
+		Number number=new Number(6);
+		System.out.println(number.phepToHop(4));
+	}
+	public static class Number
+	{
+		private int number;
+		public Number(int number)
+		{
+			this.number=number;
+		}
+		public int phepHoanVi()
+		{
+			int result=1;
+			result=phepGiaiThua(this.number);
+			return result;
+		}
+		public int phepChinhHop(int k)
+		{
+			int result=1;
+			result=phepGiaiThua(this.number)/(phepGiaiThua(this.number-k));
+			return result;
+		}
+		public int phepGiaiThua(int n)
+		{
+			int result=1;
+			for(int i=1;i<=n;i++)
+			{
+				result*=i;
+			}
+			return result;
+		}
+		public int phepToHop(int k)
+		{
+			int result=1;
+			result=phepGiaiThua(this.number)/(phepGiaiThua(k)*phepGiaiThua(this.number-k));
+			return result;
+		}
+	}
+}

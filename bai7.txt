@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class bai7 {
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int month=sc.nextInt();
+		int year=sc.nextInt();
+		MonthAndYear day1=new MonthAndYear(month, year);
+		System.out.println(day1.countDay());
+	}
+	public static class MonthAndYear
+	{
+		private int month;
+		private int year;
+		public MonthAndYear(int month,int year)
+		{
+			this.month=month;
+			this.year=year;
+		}
+		public boolean isLeapYear()
+		{
+			if((this.year%4==0 && this.year%100!=0 ) || (this.year%400==0))
+			{
+				return true;
+			}
+			else return false;
+		}
+		public int countDay()
+		{
+			int days=0;
+			switch(month) {
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+			days = 31;
+			break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+			days = 30;
+			break;
+			case 2:
+				if(isLeapYear())
+				{days=29;}
+				else {days=28;}
+			break;
+			}
+			return days;
+		}
+	}
+}

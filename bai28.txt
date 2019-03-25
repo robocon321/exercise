@@ -1,0 +1,33 @@
+
+public class bai28 {
+	public static void main(String []args)
+	{
+		Animals a1=new Animals(36,100);
+		System.out.println(a1.findChickenAndDog());
+	}
+	public static class Animals
+	{
+		private int countAnimals;
+		private int countFoot;
+		public Animals(int countAnimals,int countFoot)
+		{
+			this.countAnimals=countAnimals;
+			this.countFoot=countFoot;
+		}
+		public String findChickenAndDog()
+		{
+			int chicken=0;
+			int dog=0;
+			for(int i=0;i<=this.countAnimals;i++)
+			{
+					if(2*i+4*(this.countAnimals-i)==this.countFoot)
+					{
+						chicken=i;
+						dog=this.countAnimals-i;
+						break;
+					}
+			}
+			return "Số gà và chó lần lượt là:"+chicken+"\t"+dog;
+		}
+	}
+}

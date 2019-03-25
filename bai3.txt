@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class bai3 {
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		Time t1=new Time(a);
+		System.out.println(t1.ConvertFromSecondToTime());
+	}
+	public static class Time
+	{
+		private int time ;
+		public Time(int time)
+		{
+			this.time=time;
+		}
+		public String ConvertFromSecondToTime()
+		{
+			int hour=this.time/3600;
+			this.time=this.time%3600;
+			int minute=this.time/60;
+			this.time=this.time%60;
+			int second=this.time;
+			return hour+":"+minute+":"+second;
+		}
+	}
+}

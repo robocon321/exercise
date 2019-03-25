@@ -1,0 +1,115 @@
+import java.util.Scanner;
+
+public class bai8 {
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int number=sc.nextInt();
+		String str=""+number;
+		int length=str.length();
+		String numberToWord="";
+		for(int i=length-1;;i--)
+		{
+			int numberCheck=(int) (number/(Math.pow(10, i)));
+			if(number%1000==0)
+			{
+					numberToWord+=convertToWord(numberCheck)+" ngàn";
+					break;
+			}
+			else
+				{
+				if(i==3)
+				{
+					numberToWord+=convertToWord(numberCheck)+checkUnit(i);
+				}
+				else if(i==2)
+				{
+					if(number%100==0)
+					{
+						numberToWord+=convertToWord(numberCheck)+" trăm";
+						break;
+					}
+					numberToWord+=convertToWord(numberCheck)+checkUnit(i);				
+				}
+				else if(i==1)
+				{
+					if(numberCheck==1)
+					{
+						numberToWord+=" mười ";
+					}
+					else if(numberCheck==0)
+					{
+						numberToWord+="lẻ ";
+					}
+					else
+					{
+						numberToWord+=convertToWord(numberCheck)+" mươi ";
+						if(number%10==0)
+						{
+							break;
+						}
+					}
+				}
+				else
+				{
+					numberToWord+=convertToWord(numberCheck);
+					break;
+				}
+				number=(int) (number%Math.pow(10,i));
+
+				}
+		}
+		System.out.println(numberToWord);
+	}
+	public static String checkUnit(int length)
+	{
+		String str="";
+		if(length==3)
+		{
+			str=" ngàn ";
+		}
+		else if(length==2)
+		{
+			str=" trăm ";
+		}
+		else str=" mười ";
+		return str;
+	}
+	public static String convertToWord(int a)
+	{
+		String str="";
+		switch(a)
+		{
+		case 1:
+			str="một";
+			break;
+		case 2:
+			str="hai";
+			break;
+		case 3:
+			str="ba";
+			break;
+		case 4:
+			str="bốn";
+			break;
+		case 5:
+			str="năm";
+			break;
+		case 6:
+			str="sáu";
+			break;
+		case 7:
+			str="bảy";
+			break;
+		case 8:
+			str="tám";
+			break;
+		case 9:
+			str="chín";
+			break;
+		case 0:
+			str="không";
+		}
+		return str;
+	}
+}

@@ -1,0 +1,54 @@
+
+public class bai25 {
+	public static void main(String []args)
+	{
+		Number number=new Number(2,4);
+		System.out.println(number.sumAndPowFactorial());
+	}
+	public static class Number
+	{
+		private int n;
+		private int x;
+		public Number(int n,int x)
+		{
+			this.n=n;
+			this.x=x;
+		}
+		public double sumAndPow()
+		{
+			int sum=0;
+			for(int i=0;i<=this.n;i++)
+			{
+				sum+=Math.pow(this.x, i);
+			}
+			return sum;
+		}
+		public double sumAndPowInterleaved()
+		{
+			int sum=0;
+			for(int i=0;i<this.n;i++)
+			{
+				sum+=Math.pow(-1, i)*Math.pow(this.x, i);
+			}
+			return sum;
+		}
+		public int factorial(int n)
+		{
+			int result=1;
+			for(int i=1;i<n;i++)
+			{
+				result*=i;
+			}
+			return result;
+		}
+		public int sumAndPowFactorial()
+		{
+			int sum=0;
+			for(int i=0;i<n;i++)
+			{
+				sum+=Math.pow(x, i)/factorial(i);
+			}
+			return sum;
+		}
+	}
+}

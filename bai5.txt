@@ -1,0 +1,23 @@
+
+public class bai5 {
+	public static void main(String []args)
+	{
+		Point p1=new Point(3.3,5.4);
+		Point p2=new Point(5.3,3);
+		System.out.println(p1.distanceToPoint(p2));
+	}
+	public static class Point
+	{
+		private double x;
+		private double y;
+		public Point(double x, double y)
+		{
+			this.x=x;
+			this.y=y;
+		}
+		public double distanceToPoint(Point that)
+		{
+			return Math.sqrt((this.x*this.x-that.x*that.x)+(this.y*this.y-that.y*that.y));
+		}
+	}
+}
