@@ -33,6 +33,10 @@
 #header-toolbar
 {
 	background-color:#73ad21;
-	overflow: hidden;
 }
-
+#header-toolbar:after
+{
+    content: "";
+    display: block; 
+    clear: both;
+}
