@@ -1,0 +1,38 @@
+#header-left li
+{
+	float:left;
+	list-style-type: none;
+	padding:20px;
+	font-size: 27px;
+}
+#header-right li
+{
+	float:right;
+	padding:20px;
+	font-size: 27px;
+	list-style-type: none;
+}
+#header-left li a
+{
+	text-decoration: none;
+	color:white;
+}
+#header-left li:hover
+{
+	background-color: black;
+}
+#header-right li a
+{
+	text-decoration: none;
+	color:white;
+}
+#header-right li:hover
+{
+	background-color: black;	
+}
+#header-toolbar
+{
+	background-color:#73ad21;
+	overflow: hidden;
+}
+
